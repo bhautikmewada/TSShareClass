@@ -2,8 +2,8 @@
 //  TSShareClass.h
 //  MyExample
 //
-//  Created by Romit Mewada on 7/3/14.
-//  Copyright (c) 2014 IDeAL Experiential Learning ℗ Ltd. All rights reserved.
+//  Created by Bhautik Mewada on 7/3/14.
+//  Copyright (c) 2014 True Swan Software. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

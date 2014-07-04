@@ -29,7 +29,7 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
 
 /**Share to Facebook,Twitter & Mail*/
 
-+ (void)shareTo:(share)share;
++(void)shareTo:(share)share;
  
 /**method for share app to More like WhatsApp, Tumbler, FlipBoard*/
 
@@ -59,11 +59,11 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
     [TSShareClass shareInstance].messageBody = @"MESSAGE_BODY"; // Message Body
     [TSShareClass shareTo:Mail]; // Share To Mail
     
- /**Want To Share on More Like WhatsApp, Tumbler, FlipBoard*/
+ /**Want To Share on More Like whatsApp, Tumbler, FlipBoard*/
  
     [TSShareClass shareInstance].imageName = @"IMAGE_NAME"; // ImageIcon
     [TSShareClass shareInstance].appName = @"YOUR_APPNAME"; // Your App Name
     [TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String
-    [TSShareClass shareToMoreInView:self.view OpenMenuFromRect:CGRectZero];
+    [TSShareClass shareToMoreInView:self.view OpenMenuFromRect:CGRectZero]; // Pass View & Position
 
-
+For more support you can mail me: bhautik.mewada@gmail.com. True Swan Software.

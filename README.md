@@ -36,6 +36,20 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
 ```+(void)shareToMoreInView:(UIView*)view OpenMenuFromRect:(CGRect)rect;```
 
 /**How to use*/
+ 
+ /**Want To Share on Facebook*/
+ 
+    [TSShareClass shareInstance].imageName = @"IMAGE_NAME"; // ImageIcon
+    [TSShareClass shareInstance].appName = @"YOUR_APPNAME"; // Your App Name
+    [TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String
+    [TSShareClass shareTo:Facebook]; // Share To Facebook
+ 
+ /**Want To Share on Twitter*/
+ 
+    [TSShareClass shareInstance].imageName = @"IMAGE_NAME"; // ImageIcon
+    [TSShareClass shareInstance].appName = @"YOUR_APPNAME"; // Your App Name
+    [TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String
+    [TSShareClass shareTo:Twitter]; // Share To Twitter
 
  /**Want To Share on Mail*/
  
@@ -44,5 +58,6 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
     [TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String
     [TSShareClass shareInstance].messageBody = @"MESSAGE_BODY"; // Message Body
     [TSShareClass shareTo:Mail]; // Share To Mail
+    
 
 

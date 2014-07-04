@@ -19,11 +19,11 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
 
 ```@property(nonatomic,strong)NSString *rateURL;```
 
-/**pass messageBody for mail*/
+/**pass messagebody for mail*/
 
 ```@property(nonatomic,strong)NSString *messageBody;```
 
-/**Singalton object*/
+/**Singleton object*/
 
 ```+(instancetype)shareInstance;```
 
@@ -39,10 +39,10 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
 
  /**Want To Share on Mail*/
  
-    ```[TSShareClass shareInstance].imageName = @"IMAGE_NAME"; // ImageIcon```
-    ```[TSShareClass shareInstance].appName = @"YOUR_APPNAME"; // Your App Name```
-    ```[TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String```
-    ```[TSShareClass shareInstance].messageBody = @"MESSAGE_BODY"; // Message Body```
-    ```[TSShareClass shareTo:Mail]; // Share To Mail```
+    [TSShareClass shareInstance].imageName = @"IMAGE_NAME"; // ImageIcon
+    [TSShareClass shareInstance].appName = @"YOUR_APPNAME"; // Your App Name
+    [TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String
+    [TSShareClass shareInstance].messageBody = @"MESSAGE_BODY"; // Message Body
+    [TSShareClass shareTo:Mail]; // Share To Mail
 
 

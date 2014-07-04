@@ -25,15 +25,15 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
 
 /**Singleton object*/
 
-```+(instancetype)shareInstance;```
++(instancetype)shareInstance;
 
 /**Share to Facebook,Twitter & Mail*/
 
-```+ (void)shareTo:(share)share;```
++ (void)shareTo:(share)share;
+ 
+/**method for share app to More like WhatsApp, Tumbler, FlipBoard*/
 
-/**method for share app to More like WhatsApp,Tumbler,FlipBoard*/
-
-```+(void)shareToMoreInView:(UIView*)view OpenMenuFromRect:(CGRect)rect;```
++(void)shareToMoreInView:(UIView*)view OpenMenuFromRect:(CGRect)rect;
 
 /**How to use*/
  
@@ -59,5 +59,11 @@ Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
     [TSShareClass shareInstance].messageBody = @"MESSAGE_BODY"; // Message Body
     [TSShareClass shareTo:Mail]; // Share To Mail
     
+ /**Want To Share on More Like WhatsApp, Tumbler, FlipBoard*/
+ 
+    [TSShareClass shareInstance].imageName = @"IMAGE_NAME"; // ImageIcon
+    [TSShareClass shareInstance].appName = @"YOUR_APPNAME"; // Your App Name
+    [TSShareClass shareInstance].urlString = @"URL_STRING"; // Your App URL String
+    [TSShareClass shareToMoreInView:self.view OpenMenuFromRect:CGRectZero];
 
 

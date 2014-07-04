@@ -49,7 +49,6 @@ static TSShareClass *shareClass;
         
         //app icon of app
         [controller addImage:[UIImage imageNamed:[TSShareClass shareInstance].imageName]];
-        //return controller;
     }
     else if (share == Twitter) //share on Twitter
     {
@@ -63,7 +62,6 @@ static TSShareClass *shareClass;
         
         //pass App Icon
         [controller addImage:[UIImage imageNamed:[TSShareClass shareInstance].imageName]];
-        //return controller;
     }
     else if (share == Mail) //share via Mail
     {
@@ -78,7 +76,6 @@ static TSShareClass *shareClass;
             [mailer addAttachmentData:imageData mimeType:@"image/png" fileName:[TSShareClass shareInstance].imageName];
             
             [mailer setMessageBody:[NSString stringWithFormat:@"%@ available on App Store %@ \n\n GET IT NOW",[TSShareClass shareInstance].appName,[TSShareClass shareInstance].rateURL] isHTML:NO];
-            //[self presentViewController:mailer animated:YES completion:nil];
         }
         else
         {
@@ -120,13 +117,8 @@ static TSShareClass *shareClass;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:[TSShareClass shareInstance].imageName ofType:@""];
     documentController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:filePath]];
     documentController.delegate = self;
-    //documentController.UTI = @"public.image";
     documentController.UTI = @"net.whatsapp.image";
-    
-    //NSURL *url = [NSURL URLWithString:RATEURL];
-    //documentController.URL = url;
     [documentController presentOpenInMenuFromRect:rect inView:view animated:YES];
-    //[documentController presentOptionsMenuFromRect:CGRectMake(self.frame.size.width - 50, self.frame.size.height - 95, 100, 100) inView:self animated:YES];
 }
 
 - (UIDocumentInteractionController *) setupControllerWithURL: (NSURL*) fileURL  usingDelegate: (id <UIDocumentInteractionControllerDelegate>) interactionDelegate

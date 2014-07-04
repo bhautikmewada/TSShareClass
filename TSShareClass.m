@@ -121,6 +121,7 @@ static TSShareClass *shareClass;
     [documentController presentOpenInMenuFromRect:rect inView:view animated:YES];
 }
 
+//UIDocumentInteractionControllerDelegate
 - (UIDocumentInteractionController *) setupControllerWithURL: (NSURL*) fileURL  usingDelegate: (id <UIDocumentInteractionControllerDelegate>) interactionDelegate
 {
     documentController = [UIDocumentInteractionController interactionControllerWithURL: fileURL];

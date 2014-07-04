@@ -3,28 +3,36 @@ TSShareClass
 
 Just Pass Parameters & Call Method For Share to Facebook, Twitter, Mail & More
  
-/**pass url of app for Sharing*/
+/**pass url of app*/
+
 ```@property(nonatomic,strong)NSString *urlString;```
 
-/**pass app image for sharing*/
+/**pass app image*/
+
 ```@property(nonatomic,strong)NSString *imageName;```
 
-/**pass appName for sharing*/
+/**pass appName*/
+
 ```@property(nonatomic,strong)NSString *appName;```
 
-/**pass rateURL for sharing*/
+/**pass rateURL*/
+
 ```@property(nonatomic,strong)NSString *rateURL;```
 
 /**pass messageBody for mail*/
+
 ```@property(nonatomic,strong)NSString *messageBody;```
 
 /**Singalton object*/
+
 ```+(instancetype)shareInstance;```
 
 /**Share to Facebook,Twitter & Mail*/
+
 ```+ (void)shareTo:(share)share;```
 
 /**method for share app to More like WhatsApp,Tumbler,FlipBoard*/
+
 ```+(void)shareToMoreInView:(UIView*)view OpenMenuFromRect:(CGRect)rect;```
 
 /**How to use*/
